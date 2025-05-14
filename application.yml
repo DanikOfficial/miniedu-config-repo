@@ -1,0 +1,5 @@
+security:
+  jwt:
+    secret: supersecretkey123456
+    expiration: 3600000
+    issuer: miniedu
