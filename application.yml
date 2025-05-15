@@ -1,5 +1,5 @@
 security:
   jwt:
-    secret: supersecretkey123456
+    secret: ENC(cxj4PETryTFsjaS2W6i2JxJbU4aLJpQaISpBgK/uf9R7m8Mp17vYub05Jqx+LWWNdeJVcz/amNvHe+PmrzBU9ViBgKysXxGMIMjIadTMUXw==)
     expiration: 3600000
     issuer: miniedu
