@@ -2,9 +2,9 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/user-microservice?reWriteBatchedInserts=true
     username: postgres
-    password: ${DB_PASSWORD}
+    password: ENC(9nVauAlCZ03rph3/PL5Xt3NqhttLS1Gu)
     initialization-mode: always
-  
+
   jpa:
     hibernate:
       ddl-auto: update
@@ -12,12 +12,12 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
-  
+
   mail:
     host: smtp.gmail.com
     port: 587
     username: miniedu.app@gmail.com
-    password: ${EMAIL_PASSWORD}
+    password: ENC(jgPzcvDk8C45j8SRkKCqW43dzVmhgR3t8rc+2Bw2xco=)
     properties:
       mail:
         smtp:
