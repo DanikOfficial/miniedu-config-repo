@@ -1,0 +1,16 @@
+spring:
+  kafka:
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+
+  mail:
+    host: ${MAIL_HOST:smtp.gmail.com}
+    port: ${MAIL_PORT:587}
+    username: ${MAIL_USERNAME:miniedu.app@gmail.com}
+    password: ${MAIL_PASSWORD}
+
+miniedu:
+  auth-service:
+    base-url: https://auth.miniedu.com/api/v1/auth # This base url is a dummy url
+    paths:
+      verification: /verify
+      password-reset: /reset-password

@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://${POSTGRES_HOST:localhost}:5432/user-microservice?reWriteBatchedInserts=true
+    username: ${POSTGRES_USER:postgres}
+    password: ${POSTGRES_PASSWORD}
+
+  kafka:
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true

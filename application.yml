@@ -1,5 +1,9 @@
 security:
   jwt:
-    secret: ENC(cxj4PETryTFsjaS2W6i2JxJbU4aLJpQaISpBgK/uf9R7m8Mp17vYub05Jqx+LWWNdeJVcz/amNvHe+PmrzBU9ViBgKysXxGMIMjIadTMUXw==)
+    secret: ${JWT_SECRET}
     expiration: 3600000
     issuer: miniedu
+
+kafka:
+  topics:
+    emailEvents: email-events
