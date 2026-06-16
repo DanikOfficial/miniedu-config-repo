@@ -1,9 +1,15 @@
 spring:
+  kafka:
+    consumer:
+      group-id: email-service-group
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: "com.miniedu.model.kafka.events"
+        spring.json.use.type.headers: true
+
   mail:
-    host: smtp.gmail.com
-    port: 587
-    username: miniedu.app@gmail.com
-    password: ENC(jgPzcvDk8C45j8SRkKCqW43dzVmhgR3t8rc+2Bw2xco=)
     properties:
       mail:
         smtp:
